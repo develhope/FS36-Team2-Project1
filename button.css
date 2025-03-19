@@ -1,0 +1,87 @@
+/*Buttons*/
+:root{
+    --no-bg:rgba(0, 0, 0, 0);
+    --bg-act:rgb(161, 161, 170);
+
+    --pad: 0.75rem 1.5rem;
+    --rad: 624.9375rem;
+    
+    --tran: all 0.15s ease;
+}
+
+button{
+    all: unset;
+}
+.button-first{
+    display: block;
+    background-color: var(--no-bg);
+    padding: var(--pad);
+    cursor: pointer;    
+    
+    border-radius: var(--rad);
+    border: solid var(--standard-white);
+    
+    color: var(--standard-white);
+    font-size: var(--standard-size-sm);
+    font-weight: 550;
+    
+    transition: var(--tran);
+}
+
+.button-first:hover{
+    background-color: var(--standard-white);
+    color: var(--standard-black);
+    transition: var(--tran);
+}
+
+.button-first:active {
+    background-color: var(--bg-act);
+    border-color: solid var(--bg-act);
+}
+
+
+.button-second{
+    display: block;
+    background-color: var(--standard-white);
+    padding: var(--pad);
+    cursor: pointer;    
+    
+    border-radius: var(--rad);
+    border:solid var(--standard-white);
+    
+    color: var(--standard-black);
+    font-size: var(--standard-size-sm);
+    font-weight: 550;
+    
+    transition: var(--tran);
+}
+
+.button-second:hover{
+    background-color: rgb(212, 212, 216);
+    transition: all var(--tran);
+}
+.button-second:active {
+    background-color: var(--bg-act);
+    border-color: solid var(--bg-act);
+}
+
+.button-third{
+    display: block;
+    background-color: var(--no-bg);
+    padding: var(--pad);
+    cursor: pointer;    
+    
+    border-radius: var(--rad);
+    border: solid var(--no-bg);
+    
+    color: var(--standard-white);
+    font-size: var(--standard-size-sm);
+    font-weight: 550;
+    
+    transition: var(--tran);
+}
+
+.button-third:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+/*End Buttons*/
