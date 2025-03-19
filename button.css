@@ -30,13 +30,14 @@ button{
 
 .button-first:hover{
     background-color: var(--standard-white);
+    border: solid var(--standard-white);
     color: var(--standard-black);
     transition: var(--tran);
 }
 
 .button-first:active {
     background-color: var(--bg-act);
-    border-color: solid var(--bg-act);
+    border: solid var(--bg-act);
 }
 
 
@@ -62,7 +63,7 @@ button{
 }
 .button-second:active {
     background-color: var(--bg-act);
-    border-color: solid var(--bg-act);
+    border: solid var(--bg-act);
 }
 
 .button-third{
