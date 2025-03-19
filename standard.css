@@ -1,0 +1,70 @@
+html{
+    font-size: 16 px;  
+} 
+:root{
+    /*sizes*/
+--standard-size-sm: 1.125rem;
+--standard-size-md: 1.25rem;
+--standard-size-lg: 3.4375rem;
+
+    /*colori*/
+--standard-black: #000000;
+--standard-white: #ffffff;
+--standard-blue-dark: #02090a;
+--standard-gray-light: #9797a2;
+--standard-water-green-dark: #041e18;
+--card-color-1: linear-gradient(to top, #061518 20%, #0a2c30);
+--card-color-2: #061A1C;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../Fonts/NHaasGroteskTXPro-55Rg.otf');
+    src: url('../Fonts/NHaasGroteskTXPro-55Rg.ttf');
+}
+
+/*spacing*/
+@media (min-width: 0px) and (max-width: 639px){
+    .container-pad{
+        padding: 2.5rem 0;
+    }
+    .-margin{
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 899px){
+    .container-pad{
+        padding: 2.5rem 0;
+    }
+    .container-margin{
+        margin: 0 1.875rem;
+    }
+}
+
+@media (min-width: 900px){
+    .container-pad{
+        padding: 4rem 0;
+    }
+    .container-margin{
+        margin: 0 3.125rem;   
+    }
+}
+/*...*/
+body{
+    background-color: var(--standard-blue-dark);
+    height: 100%;
+    font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
+}
+
+.card{
+    display: flex;
+    background: var(--card-color-1);
+    border-radius: 0.75rem;
+}
+
+.card2{
+    background-color: var(--card-color-2);
+    display: flex;
+    border-radius: 0.75rem;
+}
