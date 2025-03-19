@@ -13,6 +13,7 @@ html{
 --standard-blue-dark: #02090a;
 --standard-gray-light: #9797a2;
 --standard-water-green-dark: #041e18;
+
 --card-color-1: linear-gradient(to top, #061518 20%, #0a2c30);
 --card-color-2: #061A1C;
 }
@@ -24,16 +25,16 @@ html{
 }
 
 /*spacing*/
-@media (min-width: 0px) and (max-width: 639px){
+@media (min-width: 0rem) and (max-width: 39.9375rem){ /*0 to 639px*/
     .container-pad{
         padding: 2.5rem 0;
     }
-    .-margin{
+    .container-margin{
         margin: 0 1rem;
     }
 }
 
-@media (min-width: 640px) and (max-width: 899px){
+@media (min-width: 40rem) and (max-width: 56.1875rem){ /*640 to 899px*/
     .container-pad{
         padding: 2.5rem 0;
     }
@@ -42,7 +43,7 @@ html{
     }
 }
 
-@media (min-width: 900px){
+@media (min-width: 56.25rem){ /*900px*/
     .container-pad{
         padding: 4rem 0;
     }
@@ -57,6 +58,7 @@ body{
     font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
 }
 
+    /*Cards*/
 .card{
     display: flex;
     background: var(--card-color-1);
@@ -68,3 +70,4 @@ body{
     display: flex;
     border-radius: 0.75rem;
 }
+    /*End Cards*/
