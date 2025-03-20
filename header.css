@@ -1,0 +1,120 @@
+:root{
+    --header-btn-height: 1.75rem
+}
+.header{
+    display: flex;
+    color: var(--standard-white);
+    
+    
+    flex-direction: column;
+}
+
+/*queries*/
+@media (min-width: 0rem) and (max-width: 39.9375rem){ /*0 to 639px*/
+    .header-container{
+        padding: 5rem 0 4rem 0;
+        margin: 0 3.125rem;
+    }
+    .header-title{
+        font-size: 3.75rem;
+        font-weight: 400;
+        width: 22.8125rem;
+        height: auto;
+        margin: 0;
+    }
+    .button-first{
+        display: none;
+    }
+}
+
+@media (min-width: 40rem) and (max-width: 56.1875rem){ /*640 to 899px*/
+    .header-container{
+        padding: 10.3125rem 0 4rem 0;
+        margin: 0 1.875rem;
+    }
+
+    .header-title{
+        font-size: 3.75rem;
+        font-weight: 400;
+        width: 22.8125rem;
+        height: auto;
+        margin: 0;
+    }
+
+    .header-p{
+        margin: 0;
+        box-sizing: border-box;
+        width: 15.75rem;
+        height: 4.375rem;
+    
+        font-size: var(--standard-size-sm);
+    }
+}
+
+@media (min-width: 56.25rem){ /*900px*/
+    .header-container{
+        padding: 10.3125rem 0 5rem 0;
+        margin: 0 3.125rem;
+    }
+
+    .header-title{
+        font-size: 4.375rem;
+        font-weight: 400;
+        max-width: 26.625rem;
+        height: auto;
+        margin: 0;
+    }
+
+    .header-p{
+        margin: 0;
+        box-sizing: border-box;
+        width: 20.125rem;
+        height: 5rem;
+    
+        font-size: 1.5rem;
+    }
+    
+    .header-sub{
+        width: 34.8125rem;
+    }
+    .button-first{
+        width: 6.25rem;
+        height: var(--header-btn-height);
+    }
+    .button-second{
+        width: 12rem;
+        height: var(--header-btn-height);
+    }
+    .button-third{
+        width: 16.5625rem;
+        height: var(--header-btn-height);
+    }
+}
+/*...*/
+
+.header-sub{
+    width: 34.8125rem;
+}
+/* .header-text{
+    display: block;
+} */
+/* .header-p{
+    margin: 0;
+    box-sizing: border-box;
+    width: 20.125rem;
+    height: 5rem;
+
+    font-size: 1.5rem;
+} */
+.button-first{
+    width: 6.25rem;
+    height: var(--header-btn-height);
+}
+.button-second{
+    width: 12rem;
+    height: var(--header-btn-height);
+}
+.button-third{
+    width: 16.5625rem;
+    height: var(--header-btn-height);
+}

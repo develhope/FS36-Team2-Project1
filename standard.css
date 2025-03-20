@@ -36,7 +36,7 @@ html{
     src: url('../Fonts/NHaasGroteskTXPro-55Rg.ttf');
 }
 
-/*spacing*/
+/*queries*/
 @media (min-width: 0rem) and (max-width: 39.9375rem){ /*0 to 639px*/
     .container-pad{
         padding: 2.5rem 0;
@@ -137,7 +137,6 @@ button{
     background-color: var(--button-second-hv);
     border: solid var(--button-second-hv);
     transition: all var(--tran);
-;
     transition: all var(--button-tran);
 }
 .button-second:active {
