@@ -1,8 +1,9 @@
 /*header*/
-/*problema quando si riduce la pagina*/
+/*problema al pulsante 3 quando si riduce la pagina*/
 /*desktop*/
 @media (min-width: 56.25rem){
     .header{
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,7 +81,7 @@
         border-top-left-radius: 12.5rem;
         border-top-right-radius: 12.5rem;
         position: absolute;
-        top: 45rem;
+        bottom: 0rem;
     }
     /*come posso attaccarlo al video?*/
 }
