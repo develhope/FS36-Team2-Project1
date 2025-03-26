@@ -1,80 +1,82 @@
-/*Header*/
-
-.header{
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    color: var(--standard-white);
-}
-
-.header-elements{
-    width: 100%;
-    padding: 10.3125rem 0 5rem 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-.absolute{
-    position:absolute;
-}
-/*title*/
-.header-title{
-    font-size: 4.375rem;
-    font-weight: 400;
-    height: auto;
-    margin: 0;
-}
-
-.header-p{
-    margin: 3rem 0 1rem 0;
-    box-sizing: border-box;
-    width: 15.75rem;
-    height: 4.375rem;
-
-    font-size: var(--standard-size-sm);
-}
-/*end title*/
-
-/*button*/
-.button-area{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    gap: 1rem;
-}
-.button-third{
-    margin-left: 17rem;
-}
-#btn-text{
-    width: 11.563rem;
-    font-size: 0.7rem;
-}
-/*end button*/
-
-/*video*/
-.header-video{
-    width: 100vw;
-    position: relative;
-    
-}
-#head-vid{
-    width: 100vw;
-    height: 62.5rem;
-    object-fit: cover;
-}
-
-.header-splitter{
-    width: 100vw;
-    height: 3.75rem;
-    background: var(--standard-blue-dark);
-    border-top-left-radius: 12.5rem;
-    border-top-right-radius: 12.5rem;
-    position: absolute;
-    top: 58.75rem;
+/*header*/
+/*il margin left del button-third non è dinamico, bisogna rendere flex i vari box e aggiustare le dimensioni con le %*/
+/*desktop*/
+@media (min-width: 56.25rem){
+    .header{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        color: var(--standard-white);
     }
 
-/*End Header*/
+    .header-elements{
+        width: 100%;
+        padding: 10.3125rem 0 5rem 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .absolute{
+        position:absolute;
+    }
+
+    /*title*/
+    .header-title{
+        font-size: 4.375rem;
+        font-weight: 400;
+        height: auto;
+        margin: 0;
+    }
+    .header-p{
+        margin: 3rem 0 1rem 0;
+        box-sizing: border-box;
+        width: 15.75rem;
+        height: 4.375rem;
+
+        font-size: var(--standard-size-sm);
+    }
+    /*end title*/
+
+    /*button*/
+    .button-area{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        gap: 1rem;
+    }
+    .button-third{
+        margin-left: 17rem;
+    }
+    #btn-text{
+        width: 11.563rem;
+        font-size: 0.7rem;
+    }
+    /*end button*/
+
+    /*video*/
+    .header-video{
+        width: 100vw;
+        position: relative;
+        
+    }
+    #head-vid{
+        width: 100vw;
+        height: 62.5rem;
+        object-fit: cover;
+    }
+    /*end video*/
+
+    .header-splitter{
+        width: 100vw;
+        height: 3.75rem;
+        background: var(--standard-blue-dark);
+        border-top-left-radius: 12.5rem;
+        border-top-right-radius: 12.5rem;
+        position: absolute;
+        top: 59rem;
+    }
+}
