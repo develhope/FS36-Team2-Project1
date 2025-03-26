@@ -1,5 +1,5 @@
 /*header*/
-/*il margin left del button-third non è dinamico, bisogna rendere flex i vari box e aggiustare le dimensioni con le %*/
+/*problema quando si riduce la pagina*/
 /*desktop*/
 @media (min-width: 56.25rem){
     .header{
@@ -11,7 +11,7 @@
     }
 
     .header-elements{
-        width: 75%;
+        width: 50%;
         padding: 10.3125rem 0 5rem 0;
         display: flex;
         flex-direction: column;
@@ -68,7 +68,7 @@
     }
     #head-vid{
         width: 100vw;
-        height: 62.5rem;
+        height: 48.5rem;
         object-fit: cover;
     }
     /*end video*/
