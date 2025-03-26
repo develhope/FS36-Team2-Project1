@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>section 1</title>
-    <link rel="stylesheet" href="standard.css">
-    <link rel="stylesheet" href="primasection.css">
-</head>
-<body>
+    <link rel="stylesheet" href="standard.css" />
+    <link rel="stylesheet" href="primasection.css" />
+  </head>
+  <body>
     <section class="section1">
-        <div id="TestoLuminoso">
-            <h1>L’unica piattaforma commerciale per tutte le esigenze</h1>
-            <span class="testi">
-                <p>
-                    <a class="voci" >Per vendere online e di persona.</a>
-                    <a class="voci" >Per vendere a livello locale e internazionale.</a>
-                    <a class="voci" >Per vendere direttamente e all’ingrosso. </a>
-                    <a class="voci" >Per vendere su desktop e dispositivi mobili.</a>
-                </p>
-            </span>
-        </div>
+      <div id="TestoLuminoso">
+        <h1>L’unica piattaforma commerciale per tutte le esigenze</h1>
+        <span class="testi">
+          <p>
+            <a class="voci">Per vendere online e di persona.</a>
+            <a class="voci">Per vendere a livello locale e internazionale.</a>
+            <a class="voci">Per vendere direttamente e all’ingrosso. </a>
+            <a class="voci">Per vendere su desktop e dispositivi mobili.</a>
+          </p>
+        </span>
+      </div>
     </section>
 
     <script>
-        //prende dalla classe
-        let frasi = document.getElementsByClassName("voci");
+      //prende dalla classe
+      let frasi = document.getElementsByClassName("voci");
 
-        for (let i = 0; i < frasi.length; i++) {
-            frasi[i].addEventListener("click", changeToWhite);
-        }
+      for (let i = 0; i < frasi.length; i++) {
+        frasi[i].addEventListener("click", (event) => {
+          let testoBianco = document.querySelector(".bianco");
+          if (testoBianco) {
+            testoBianco.classList.remove("bianco");
+            testoBianco.classList.add("voci");
 
-        // La funzione per cambiare il colore del testo
-        function changeToWhite(event) {
-            event.target.style.color = "white";
-        }
-
+            event.target.classList.remove("voci");
+            event.target.classList.add("bianco");
+          } else {
+            event.target.classList.remove("voci");
+            event.target.classList.add("bianco");
+          }
+        });
+      }
     </script>
-   
-</body>
+  </body>
 </html>

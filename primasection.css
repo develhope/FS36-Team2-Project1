@@ -27,8 +27,18 @@ body{
 }
 
 .voci:hover{
-    background: linear-gradient(90deg, rgba(0,223,255,1) 0%, rgba(0,255,240,1) 30%, rgba(0,255,147,1) 50%, rgba(9,150,35,1) 74%, rgba(0,69,255,1) 100%);
+    background:linear-gradient(
+        90deg,
+        rgba(179, 245, 255, 1) 0%,  
+        rgba(163, 255, 240, 1) 30%,  
+        rgba(153, 255, 204, 1) 50%,  
+        rgba(96, 189, 113, 1) 74%,  
+        rgba(102, 163, 255, 1) 100%
+      );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.bianco{
+    color:white;
+}
