@@ -30,16 +30,17 @@
         frasi[i].addEventListener("click", (event) => {
           let testoBianco = document.querySelector(".bianco");
           if (testoBianco) {
-            testoBianco.classList.remove("bianco");
-            testoBianco.classList.add("voci");
-
-            event.target.classList.remove("voci");
-            event.target.classList.add("bianco");
+            toggleTextColor(testoBianco, "bianco", "voci");
+            toggleTextColor(event.target, "voci", "bianco");
           } else {
-            event.target.classList.remove("voci");
-            event.target.classList.add("bianco");
+            toggleTextColor(event.target, "voci", "bianco");
           }
         });
+      }
+
+      function toggleTextColor(element, removeClass, addClass) {
+        element.classList.remove(removeClass);
+        element.classList.add(addClass);
       }
     </script>
   </body>
