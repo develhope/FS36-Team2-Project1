@@ -5,12 +5,13 @@
     .header{
         display: flex;
         align-items: center;
+        justify-content: center;
         width: 100vw;
         color: var(--standard-white);
     }
 
     .header-elements{
-        width: 100%;
+        width: 75%;
         padding: 10.3125rem 0 5rem 0;
         display: flex;
         flex-direction: column;
@@ -41,7 +42,9 @@
 
     /*button*/
     .button-area{
+        width: 100%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
@@ -49,10 +52,10 @@
         gap: 1rem;
     }
     .button-third{
-        margin-left: 17rem;
+        margin-left: auto;
     }
     #btn-text{
-        width: 11.563rem;
+        width: 8.625rem;
         font-size: 0.7rem;
     }
     /*end button*/
