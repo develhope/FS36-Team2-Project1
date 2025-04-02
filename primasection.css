@@ -78,8 +78,22 @@ body {
   border-radius: 5%;
 }
 
-.slide-img img:hover{
-  backdrop-filter: blur(7px) saturate(180%);
-  -webkit-backdrop-filter: blur(7px) saturate(180%);
+.slide-img .test{
+  opacity: 0;
   background-color: rgba(10, 38, 43, 0.75);
+  position:absolute;
+  top:0;
+  bottom:0;
+  right: 0;
+  left:0
 }
+
+.slide-img:hover .test{
+  /*backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(10, 38, 43, 0.75);*/
+  opacity: 1;
+}
+
+
+
