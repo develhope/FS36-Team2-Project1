@@ -1,44 +1,85 @@
-body{
-    background-color: aliceblue;
-    margin:0;
-    padding:0;
-}
-.section1{
-    height: auto;
-    background-color: var(--standard-blue-dark);
-    color: var(--standard-white);
-    padding: var(--standard-size-lg);
-    font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
-    font-size: 3rem;
-    margin:0;
+body {
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
 }
 
-.section1 h1{
-    font-weight:lighter;
-    margin: 0;
-    padding-bottom: var(--standard-size-sm);
+.section1 {
+  height: auto;
+  background-color: var(--standard-blue-dark);
+  color: var(--standard-white);
+  padding: var(--standard-size-lg);
+  font-family: 'MyCustomFont', Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  margin: 0;
 }
 
-.testi, .testi p{
-    margin: 0;
-    padding-right: var(--standard-size-lg);
-    font-size: 2.9375rem;
-    color: var(--standard-gray-light);
+.section1 h1 {
+  font-weight: lighter;
+  margin: 0;
+  padding-bottom: var(--standard-size-sm);
 }
 
-.voci:hover{
-    background:linear-gradient(
-        90deg,
-        rgba(179, 245, 255, 1) 0%,  
-        rgba(163, 255, 240, 1) 30%,  
-        rgba(153, 255, 204, 1) 50%,  
-        rgba(96, 189, 113, 1) 74%,  
-        rgba(102, 163, 255, 1) 100%
-      );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.testi,
+.testi p {
+  margin: 0;
+  padding-right: var(--standard-size-lg);
+  font-size: 2.9375rem;
+  color: var(--standard-gray-light);
 }
 
-.bianco{
-    color:white;
+.voci:hover {
+  background: linear-gradient(90deg,
+      rgba(179, 245, 255, 1) 0%,
+      rgba(163, 255, 240, 1) 30%,
+      rgba(153, 255, 204, 1) 50%,
+      rgba(96, 189, 113, 1) 74%,
+      rgba(102, 163, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bianco {
+  color: white;
+}
+
+.swiper {
+  display: flex;
+  height: 400px;
+  overflow: hidden;
+  /* Impedisce di andare a capo */
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.slide-img {
+  height: 300px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide-img img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  border-radius: 5%;
+}
+
+.slide-img img:hover{
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(10, 38, 43, 0.75);
 }
