@@ -32,8 +32,8 @@ html{
 
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('../Fonts/NHaasGroteskTXPro-55Rg.otf');
-    src: url('../Fonts/NHaasGroteskTXPro-55Rg.ttf');
+    src: url('./Fonts/NHaasGroteskTXPro-55Rg.otf');
+    src: url('./Fonts/NHaasGroteskTXPro-55Rg.ttf');
 }
 
 /*spacing*/
@@ -69,7 +69,15 @@ body{
     height: 100%;
     font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
 }
-
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.center-content{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
     /*Cards*/
 .card{
     display: flex;

@@ -1,94 +1,28 @@
-/*here start section-second*/
-:root{
-    --section-second-gray:#9797A2;
-	--section-second-lg-crd-ratio: 2291/1080;
-    --section-second-sm-crd-ratio: 407/484;
-}
-    /*containers*/
-.section-second{
+.section-second-rules{
     display: flex;
     justify-content: center;
     width: 100vw;
 }
 .section-second-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: white;
     flex-direction: column;
-    width: auto;
-    background-color: white;    
 }
-        /*text*/
-.section-second-text{
-    width: 40%;
+.section-second-vd-lg{
+    margin-bottom: 1rem;
+}
+
+.section-second-cards{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
 }
-.section-second-p{
-    color: #30DEEE;
-    margin: 0 0 1rem 0;
+
+.section-second-register, .section-second-vd-sm{
+    margin-right: 1rem;
 }
-.section-second-sub-text{
-    display: flex;
-}
-.section-second-sub-p{
-    color: var(--section-second-gray);
-    font-size: var(--standard-size-sm);
-    font-weight: 500;
-}
-.section-second-link{
-    color: var(--section-second-gray);
-}
-        /*...*/
-        /*grid*/
-.section-second-grid{
-    /* width: 300px;
-    height: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px; */
-}
-.section-second-large-video{
-    /* aspect-ratio: 2291 / 1080;
-    grid-column: 1 / 4;
-    grid-row: 1; */
-}
-.section-second-register{
-    /* grid-column: 1;
-    grid-row: 2; */
-    background-color: aqua;
-}
-.section-second-small-video{
-    /* grid-column: 2;
-    grid-row: 2; */
-    flex-direction: column;
-}
-.section-second-animation{
-    /* grid-column: 3;
-    grid-row: 2; */
-    background-color: yellow;
-}
-        /*...*/
-    /*cards*/
-        /*video*/
-#section-second-lg-vd-id, #section-second-sm-vd-id{
+
+#section-second-vd-lg, #section-second-vd-sm{
     object-fit: contain;
     width: 100%;
     height: auto;
 }
-.section-second-card-title{
-    color: var(--standard-white);
-    margin: 0 0 0.5rem 0;
-}
-.section-second-sm-vd-text{
-    padding: 2rem;
-}
-.section-second-sub-p{
-    margin: 0;
-}
-    /*...*/
-        /*...*/
-/*end section-second*/
