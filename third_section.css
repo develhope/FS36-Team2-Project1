@@ -1,0 +1,30 @@
+.small-writing {
+  color: #30deee;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.bigger-writing {
+  color: #ffffff;
+  font-size: 55px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.first-card {
+  width: 662px;
+  height: 668px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border-radius: 1 rem;
+}
+.second-card {
+  width: 662px;
+  height: 668px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border: 1px;
+  border-radius: 1 rem;
+}
