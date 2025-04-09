@@ -1,0 +1,30 @@
+.section-fifth-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video{
+    width: 60%;
+    height: 60%;
+}
+.section-fifth-wrapper{
+    max-width: 1100px;
+    width: 100%;
+}
+.section-fifth-wrapper .section-fifth-carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 1rem;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+}
+
+.section-fifth-carousel :where(.section-fifth-card, .section-fifth-video){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
