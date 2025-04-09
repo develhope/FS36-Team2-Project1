@@ -14,6 +14,11 @@ html{
 --standard-blue-dark: #02090a;
 --standard-gray-light: #9797a2;
 --standard-water-green-dark: #041e18;
+--radial-gradient:radial-gradient(
+    rgba(21, 112, 118, 0.6),  
+    rgb(6 26 28) 75%,         
+    #061a1c                   
+  );;
 
     /*card*/
 --card-color-1: linear-gradient(to top, #061518 20%, #0a2c30);
@@ -30,11 +35,11 @@ html{
 --button-tran: all 0.15s ease;    
 }
 
-@font-face {
+/* @font-face {
     font-family: 'MyCustomFont';
     src: url('./Fonts/NHaasGroteskTXPro-55Rg.otf');
     src: url('./Fonts/NHaasGroteskTXPro-55Rg.ttf');
-}
+} */
 
 /*spacing*/
 @media (min-width: 0rem) and (max-width: 39.9375rem){ /*0 to 639px*/
