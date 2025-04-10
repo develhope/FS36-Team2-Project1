@@ -1,30 +1,96 @@
-.small-writing {
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.terza-section-small-writing {
   color: #30deee;
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  margin-left: 60px;
 }
-.bigger-writing {
-  color: #ffffff;
+.terza-section-bigger-writing {
+  color: var(--standard-white);
   font-size: 55px;
-  font-family: "Times New Roman", Times, serif;
+  margin-left: 60px;
+}
+.terza-section-prima-scritta-card {
+  font-size: 20px;
+  color: var(--standard-white);
+}
+.terza-section-seconda-scritta-card {
+  font-size: 18px;
+  color: #9dabad;
+}
+.terza-section-scritte-card {
+  margin-left: 35px;
+  margin-right: 50px;
+}
+.scritta-sottolineata :hover :active {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.card-container {
+.terza-section-card-container {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 130px;
 }
-.first-card {
+.terza-section-first-card {
   width: 662px;
   height: 668px;
   background-color: var(--card-color-2);
   padding: 5px;
-  border-radius: 1 rem;
+  border-radius: 1rem;
 }
-.second-card {
+.terza-section-second-card {
   width: 662px;
   height: 668px;
   background-color: var(--card-color-2);
   padding: 5px;
   border: 1px;
-  border-radius: 1 rem;
+  border-radius: 1rem;
 }
+.scritta-card {
+  margin-left: 85px;
+}
+
+.terza-section-third-card {
+  width: 1341px;
+  height: 596px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border: 1px;
+  border-radius: 1rem;
+}
+.terza-section-forth-card {
+  width: 662px;
+  height: 668px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border: 1px;
+  border-radius: 1rem;
+}
+.terza-section-fifth-card {
+  display: flex;
+  justify-content: center;
+  width: 662px;
+  height: 668px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border: 1px;
+  border-radius: 1rem;
+}
+.Iphone {
+  width: 70%;
+  height: fit-content;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.nascondi-Iphone {
+  display: flex;
+  justify-content: center;
+  width: 662px;
+  height: 500px;
+  overflow: hidden;
+}
+/* fare la parte bassa dell'iphone sfocata */
