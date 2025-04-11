@@ -14,6 +14,11 @@ html{
 --standard-blue-dark: #02090a;
 --standard-gray-light: #9797a2;
 --standard-water-green-dark: #041e18;
+--radial-gradient:radial-gradient(
+    rgba(21, 112, 118, 0.6),  
+    rgb(6 26 28) 75%,         
+    #061a1c                   
+  );;
 
     /*card*/
 --card-color-1: linear-gradient(to top, #061518 20%, #0a2c30);
@@ -28,6 +33,12 @@ html{
 --button-rad: 624.9375rem;
     
 --button-tran: all 0.15s ease;    
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./Fonts/NHaasGroteskTXPro-55Rg.otf');
+    src: url('./Fonts/NHaasGroteskTXPro-55Rg.ttf');
 }
 
 body{
@@ -71,6 +82,21 @@ body{
     }
 }
 /*...*/
+
+body{
+    background-color: var(--standard-blue-dark);
+    height: 100%;
+    font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.center-content{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
     /*Cards*/
 .card{
