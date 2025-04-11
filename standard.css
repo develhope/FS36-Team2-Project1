@@ -35,13 +35,26 @@ html{
 --button-tran: all 0.15s ease;    
 }
 
-/* @font-face {
+@font-face {
     font-family: 'MyCustomFont';
     src: url('./Fonts/NHaasGroteskTXPro-55Rg.otf');
     src: url('./Fonts/NHaasGroteskTXPro-55Rg.ttf');
-} */
+}
 
-/*spacing*/
+body{
+    background-color: var(--standard-blue-dark);
+    height: 100%;
+    font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./Fonts/NHaasGroteskTXPro-55Rg.otf');
+    src: url('./Fonts/NHaasGroteskTXPro-55Rg.ttf');
+}
+
+/*queries*/
 @media (min-width: 0rem) and (max-width: 39.9375rem){ /*0 to 639px*/
     .container-pad{
         padding: 2.5rem 0;
@@ -69,6 +82,7 @@ html{
     }
 }
 /*...*/
+
 body{
     background-color: var(--standard-blue-dark);
     height: 100%;
@@ -83,6 +97,7 @@ body{
     align-items: center;
     align-content: center;
 }
+
     /*Cards*/
 .card{
     display: flex;
@@ -150,7 +165,6 @@ button{
     background-color: var(--button-second-hv);
     border: solid var(--button-second-hv);
     transition: all var(--tran);
-;
     transition: all var(--button-tran);
 }
 .button-second:active {
