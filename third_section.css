@@ -24,10 +24,15 @@ html {
   margin-left: 35px;
   margin-right: 50px;
 }
-.scritta-sottolineata :hover :active {
+a {
+  font-size: 18px;
+  color: #9dabad;
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--standard-white);
   cursor: pointer;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .terza-section-card-container {
@@ -55,12 +60,19 @@ html {
 }
 
 .terza-section-third-card {
+  background-image: url("file:///C:/Users/Utente/OneDrive/Documenti/GitHub/FS36-Team2-Project1/foto_video/cresci_in_tutto_il_mondo/600a7b9e8074695ddb32d366f72d93d4-height=547-width=868.png");
   width: 1341px;
   height: 596px;
   background-color: var(--card-color-2);
   padding: 5px;
   border: 1px;
   border-radius: 1rem;
+}
+
+.scritta-immagine {
+  position: relative;
+  bottom: -440px;
+  margin-left: 30px;
 }
 .terza-section-forth-card {
   width: 662px;
@@ -70,15 +82,26 @@ html {
   border: 1px;
   border-radius: 1rem;
 }
+.computer {
+  border-radius: 1rem;
+  margin-left: 10%;
+  margin-top: 55px;
+}
+.scritta-computer {
+  margin-left: 30px;
+  margin-top: 110px;
+}
 .terza-section-fifth-card {
-  display: flex;
-  justify-content: center;
   width: 662px;
   height: 668px;
   background-color: var(--card-color-2);
   padding: 5px;
   border: 1px;
   border-radius: 1rem;
+}
+.display-flex {
+  display: flex;
+  justify-content: center;
 }
 .Iphone {
   width: 70%;
@@ -93,4 +116,9 @@ html {
   height: 500px;
   overflow: hidden;
 }
-/* fare la parte bassa dell'iphone sfocata */
+.scritta-iphone {
+  margin-left: 30px;
+  margin-top: 70px;
+}
+
+/* fare la parte bassa dell'iphone sfocata, mettere le notifiche all'iphone, fare gli slider*/
