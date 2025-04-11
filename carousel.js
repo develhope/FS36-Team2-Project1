@@ -45,10 +45,20 @@ const dragStop = () => {
   carousel.classList.remove("section-fifth-drag");
 };
 
+//prendiamo la durata del video e la mettiamo nel set interval
+const videoDuration = document.querySelectorAll(".section-fifth-video");
+
+videoDuration.forEach((video) => {
+  video.addEventListener("loadedmetadata", () => {
+    const durata = video.duration;
+    console.log(`Durata del video: ${durata} secondi`);
+  });
+});
+
 const autoPlay = () =>
   (timeoutId = setInterval(
     () => (carousel.scrollLeft += firstCardWidth),
-    9000
+    7000
   ));
 autoPlay();
 
