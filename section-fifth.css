@@ -1,0 +1,19 @@
+.section-fifth-bottom{
+    margin: 0 5.625rem; /*desktop*/
+}
+
+.section-fifth-bottom-text{
+    margin: 0 0 4rem 0;
+}
+
+.section-fifth-bottom-title{
+    margin: 0 0 1.5rem 0;
+    font-size: 3rem;
+}
+.section-fifth-sliders, .section-fifth-carousel-container{
+    display: flex;
+}
+.section-fifth-slider-container{
+    max-width: 500px;
+    width: 50%;
+}

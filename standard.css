@@ -7,12 +7,15 @@ html{
 --standard-size-md: 1.25rem;
 --standard-size-lg: 3.4375rem;
 
+--standard-radius-sm: 0.75rem;
+
     /*colori*/
 --standard-trasparent: #00000000;
 --standard-black:#000000;
 --standard-white: #ffffff;
 --standard-blue-dark: #02090a;
 --standard-gray-light: #9797a2;
+--standard-gray:#9DABAD;
 --standard-water-green-dark: #041e18;
 
     /*card*/
@@ -24,7 +27,7 @@ html{
 --button-second-hv:#D4D4D8;
 --button-third-hv:#FFFFFF26;
 
---button-pad: 0.75rem 1.5rem;
+--button-pad: var(--standard-radius-sm) 1.5rem;
 --button-rad: 624.9375rem;
     
 --button-tran: all 0.15s ease;    
@@ -36,12 +39,27 @@ body{
     font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
     margin: 0;
 }
-
+/*font*/
 @font-face {
     font-family: 'MyCustomFont';
     src: url('./Fonts/NHaasGroteskTXPro-55Rg.otf');
     src: url('./Fonts/NHaasGroteskTXPro-55Rg.ttf');
 }
+.standard-weight{
+    font-weight: 400;
+}
+.standard-title{
+    margin: 0;
+    color: var(--standard-white);
+}
+.standard-text{
+    margin: 0;
+    color: var(--standard-gray);
+}
+.standard-link:hover{
+    color: var(--standard-white);
+}
+/*...*/
 
 /*queries*/
 @media (min-width: 0rem) and (max-width: 39.9375rem){ /*0 to 639px*/
@@ -71,18 +89,27 @@ body{
     }
 }
 /*...*/
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.center-content{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
     /*Cards*/
 .card{
     display: flex;
     background: var(--card-color-1);
-    border-radius: 0.75rem;
+    border-radius: var(--standard-radius-sm);
 }
 
 .card2{
     background-color: var(--card-color-2);
     display: flex;
-    border-radius: 0.75rem;
+    border-radius: var(--standard-radius-sm);
 }
     /*End Cards*/
 
