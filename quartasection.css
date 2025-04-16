@@ -11,6 +11,7 @@
 }
 
 #primaparte img{
+    display: block;
     width: 100%;
     height: 100%;
 }
@@ -33,4 +34,11 @@
     width: 35%;
     padding-left: 15%;
 }
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* overlay grigio */
+    overflow: hidden;
+  }
 
