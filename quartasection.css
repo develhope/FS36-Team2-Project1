@@ -1,0 +1,36 @@
+#quartasection{
+    background-color: #000A1E;
+    width: 100%;
+    color:var(--standard-gray-light);
+
+}
+#primaparte{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#primaparte img{
+    width: 100%;
+    height: 100%;
+}
+
+#testo{
+    width: inherit;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(
+    to right,
+    rgba(0, 10, 30, 1) 0%,
+    rgba(0, 10, 30, 1) 50%,
+    rgba(0, 10, 30, 0.8) 75%,
+    rgba(0, 10, 30, 0.4) 100%
+  );
+    padding: 20px;
+}
+
+#testo p,h1{
+    width: 35%;
+    padding-left: 15%;
+}
+
