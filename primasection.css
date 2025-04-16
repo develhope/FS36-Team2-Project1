@@ -45,38 +45,6 @@ body {
 
 .swiper {
   display: flex;
-<<<<<<< Updated upstream
-  height: 400px;
-  overflow: hidden;
-  /* Impedisce di andare a capo */
-}
-
-.swiper-wrapper {
-  display: flex;
-}
-
-.swiper-slide {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.slide-img {
-  height: 300px;
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.slide-img img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-=======
   overflow: hidden; 
 }
 
@@ -85,7 +53,6 @@ body {
   height: 400px;
   width: 100%;
   object-fit: cover;
->>>>>>> Stashed changes
   border-radius: 5%;
 }
 
@@ -96,9 +63,6 @@ body {
   top:0;
   bottom:0;
   right: 0;
-<<<<<<< Updated upstream
-  left:0
-=======
   left:0;
   display: flex;
   flex-direction: column;
@@ -127,7 +91,6 @@ text-decoration: none;
 color: gray;
 font-size: var(--standard-size-sm);
 
->>>>>>> Stashed changes
 }
 
 .slide-img:hover .test{
