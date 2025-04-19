@@ -26,6 +26,23 @@
           <div class="spotlight"></div>
         </div>
       </div>
+      <div id="secondaparte"></div>
+
+      <script>
+        let spotlight = document.querySelector(".spotlight");
+
+        document.addEventListener("mousemove", function (e) {
+          let x = e.pageX;
+          let y = e.pageY;
+
+          spotlight.style.background =
+            "radial-gradient(circle at " +
+            x +
+            "px " +
+            y +
+            "px ,rgba(255, 255, 255, 1), transparent 50%)";
+        });
+      </script>
     </section>
   </body>
 </html>
