@@ -60,19 +60,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
   }
   
   #quarta-section-dev {
     position: relative;
     width: 85%;
     max-width: 75rem;
-    background: radial-gradient(circle at center, #111729 0%, #050b16 100%);
+    background: radial-gradient(circle at center, #0b1e51 0%, #131c2c 100%);
     border-radius: 0.5rem;
     padding: 1.875rem 0;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 50vh;
+    margin-bottom: 40px;
   }
   
   .quarta-section-wrapper {
@@ -108,7 +111,7 @@
   
   .badge-left {
     left: 7.5%;
-    top: 50%;
+    top: 25%;
     transform: translateY(-130%);
     z-index: 10;
   }
@@ -129,23 +132,26 @@
   
   /* CARD GENERALI */
   .quarta-section-card {
+    padding: 10px ;
+    padding-bottom: 0px;
     position: absolute;
     border-radius: 0.25rem;
     overflow: hidden;
-    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.5);
+    background:  rgba(113, 112, 112, 0.5);
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.6);
   }
   
   /* CARD SPECIFICHE */
   .quarta-section-card-small {
-    width: 30%;
-    height: 65%;
-    top: 55%;
-    left: 12%;
-    z-index: 5;
+    width: 20%;
+    height: 60%;
+    top: 30%;
+    left: 9%;
+    z-index: 2;
   }
   
   .quarta-section-card-medium {
-    width: 42%;
+    width: 45%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
@@ -155,6 +161,7 @@
   .quarta-section-card-large {
     width: 30%;
     top: 55%;
+    height: auto;
     right: 12%;
     z-index: 5;
   }
@@ -176,4 +183,13 @@
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 1.25rem 1.25rem;
     z-index: 1;
+  }
+
+
+  #quarta-section-testo-secondaparte
+  {
+    display: flex;
+    flex-direction: column;
+    width: 75%; 
+    justify-content: flex-start;
   }
