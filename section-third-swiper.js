@@ -13,5 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
       modifier: 1,
       slideShadow: true,
     },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
   });
 });
