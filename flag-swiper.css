@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.swiper {
+  width: 200px;
+  height: 100%;
+}
+
+.swiper-slide {
+  /* height: 100px; */
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+.img-background {
+  width: 100px;
+  height: 100px;
+  background-color: #e5e7eb;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.swiper-slide-active {
+  filter: brightness(1.2);
+  opacity: 1;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  filter: brightness(0.5);
+  opacity: 0.6;
+}

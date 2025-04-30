@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       modifier: 1,
       slideShadow: true,
     },
-    // slideActiveClass: "pippo",
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -22,10 +21,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   swiper.on("slideChange", function () {
     console.log(swiper);
-
-    // const nextSlide = document.querySelector(
-    //   `[data-swiper-slide-index="${swiper.activeIndex + 1}"]`
-    // );
-    // nextSlide.classList.add("hidden");
   });
 });

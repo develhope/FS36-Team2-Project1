@@ -19,19 +19,6 @@
   width: 230px;
   aspect-ratio: 3/4;
   border-radius: 20px;
-  /* visibility: hidden; */
-}
-/* .swiper-slide:not(.pippo) {
-  opacity: 0;
-}
-.pippo + .swiper-slide {
-  opacity: 1;
-}
-.swiper-slide:has(+ .pippo)  {
-  opacity: 1;
-} */
-.hidden {
-  opacity: 0;
 }
 .swiper-slide img {
   display: block;
@@ -52,4 +39,8 @@
 .swiper-slide-next,
 .swiper-slide-active {
   opacity: 1;
+}
+.swiper-slide-prev,
+.swiper-slide-next {
+  filter: brightness(0.5);
 }
