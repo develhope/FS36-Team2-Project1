@@ -73,12 +73,12 @@ a:hover {
 .video-totale {
   border-radius: 1rem;
   width: 330px;
-  margin-top: 130px;
+  margin-top: -260px;
   margin-left: 850px;
 }
 
 .scritta-immagine {
-  bottom: -440px;
+  margin-bottom: 35px;
   margin-left: 30px;
 }
 .terza-section-forth-card {
@@ -133,4 +133,4 @@ a:hover {
   margin-top: 70px;
 }
 
-/* fare la parte bassa dell'iphone sfocata, linear gradient, fare gli slider*/
+/* fare la parte bassa dell'iphone sfocata, linear gradient*/
