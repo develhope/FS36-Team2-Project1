@@ -31,5 +31,5 @@ setInterval(() => {
     slider.style.transition = "none";
     slider.style.transform = "translateY(0)";
     scrollNext();
-  }, 500);
-}, 3000);
+  }, 600);
+}, 3500);

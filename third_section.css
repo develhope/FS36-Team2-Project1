@@ -73,10 +73,7 @@ a:hover {
   border-radius: 1rem;
   margin-left: 80px;
 }
-/*  .terza-section-card-container {
-  display: flex;
-  flex-wrap: wrap; 
-} */
+
 .video-totale {
   border-radius: 1rem;
   width: 330px;
@@ -85,7 +82,6 @@ a:hover {
 }
 
 .scritta-immagine {
-  /* margin-bottom: 30px; */
   margin-left: 30px;
 }
 .terza-section-forth-card {
@@ -131,5 +127,3 @@ a:hover {
   margin-left: 30px;
   margin-top: -15px;
 }
-
-/* fare la parte bassa dell'iphone sfocata, linear gradient*/
