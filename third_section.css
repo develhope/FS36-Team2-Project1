@@ -25,6 +25,7 @@
 .terza-section-scritte-card {
   margin-left: 35px;
   margin-right: 50px;
+  margin-top: -25px;
 }
 a {
   font-size: 18px;
@@ -104,7 +105,7 @@ a:hover {
 }
 .scritta-computer {
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: -15px;
 }
 .terza-section-fifth-card {
   width: 662px;
@@ -119,24 +120,16 @@ a:hover {
   justify-content: center;
 }
 .Iphone {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
   width: 70%;
   height: fit-content;
-  margin-top: 60px;
-  border-bottom: 3px solid trasparent;
-  background-image: linear-gradient(to bottom, transparent, #061a1c);
-}
-
-.nascondi-Iphone {
-  display: flex;
-  justify-content: center;
-  width: 662px;
-  height: 500px;
-  /* overflow: hidden; */
+  margin-top: 70px;
 }
 
 .scritta-iphone {
   margin-left: 30px;
-  margin-top: 70px;
+  margin-top: -15px;
 }
 
 /* fare la parte bassa dell'iphone sfocata, linear gradient*/
