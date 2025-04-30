@@ -72,9 +72,8 @@
     border-radius: var(--standard-radius-sm);
 }
 
-/* bottom */
 .section-fifth-bottom{
-    margin: 0 5.625rem; /*desktop*/
+    margin: 0 5.625rem;
 }
 
 .section-fifth-bottom-text{
@@ -91,4 +90,31 @@
 .section-fifth-slider-container{
     max-width: 500px;
     width: 50%;
+    background: linear-gradient(311deg,rgba(7, 39, 32, 1) 0%, rgba(11, 51, 43, 1) 67%);
+}
+
+.section-fifth-middle{
+    position: relative;
+    width: 100vw;
+    display: flex;
+}
+.section-fifth-planet{
+    width: 100%;
+    z-index: 0;
+}
+
+.section-fifth-middle-text{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-top: -11vw;
+}
+
+.section-fifth-middle-text h3{
+    margin: 0 0 1.5rem 0;
+    font-size: 3rem;
+}
+
+.section-fifth-middle-text p{
+    font-size: 1.25rem;
 }

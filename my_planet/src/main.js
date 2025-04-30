@@ -5,25 +5,40 @@ import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass";
 
-const scene = new THREE.Scene();
+//canvas size info
+const container = document.getElementById("canvas-container");
+const canvas = document.getElementById("planet");
 
-const camera = new THREE.PerspectiveCamera(
-  75,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  1000
-);
+const width = container.clientWidth;
+const height = container.clientHeight;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 
 const render = new THREE.WebGLRenderer({
-  canvas: document.querySelector("#bg"),
+  canvas: document.querySelector("#planet"),
 });
 
+scene.background = null;
+scene.background = new THREE.Color("#051B17");
 //camera and size
 
 render.setPixelRatio(window.devicePixelRatio);
-render.setSize(window.innerWidth, window.innerHeight);
+render.setSize(width, height);
 camera.position.setZ(30);
 
+//dinamic resize
+function resizeRenderToContainer() {
+  const width = container.clientWidth;
+  const height = container.clientHeight;
+
+  render.setSize(width, height);
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+  composer.setSize(width, height);
+}
+
+window.addEventListener("resize", resizeRenderToContainer);
 //planet
 
 const textureLoader = new THREE.TextureLoader();
@@ -32,6 +47,7 @@ const earthTexture = textureLoader.load("./night_earth.jpeg");
 const geometry = new THREE.SphereGeometry(10, 27, 20);
 const material = new THREE.MeshStandardMaterial({ map: earthTexture });
 const sphere = new THREE.Mesh(geometry, material);
+sphere.position.x = -10;
 scene.add(sphere);
 
 //light
@@ -43,36 +59,41 @@ scene.add(directionalLight);
 
 //stars
 
-function addStar() {
-  const starTexture = textureLoader.load("./glow_texture.png");
-  const geometry = new THREE.SphereGeometry(1, 24, 24);
-  const material = new THREE.MeshBasicMaterial({
-    map: starTexture,
-    color: 0xffffff,
-  });
-  const star = new THREE.Mesh(geometry, material);
+const starGeometry = new THREE.BufferGeometry();
+const starCount = 1000;
+const starVertices = [];
 
-  const [x, y] = Array(2)
-    .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(window.innerWidth * 2));
+for (let i = 0; i < starCount; i++) {
+  const x = THREE.MathUtils.randFloatSpread(width * 2);
+  const y = THREE.MathUtils.randFloatSpread(height * 2);
   const z = THREE.MathUtils.randFloatSpread(400) - 500;
-
-  star.position.set(x, y, z);
-  scene.add(star);
+  starVertices.push(x, y, z);
 }
+
+starGeometry.setAttribute(
+  "position",
+  new THREE.Float32BufferAttribute(starVertices, 3)
+);
+
+const starMaterial = new THREE.PointsMaterial({
+  color: 0xffffff,
+  size: 0.7,
+  sizeAttenuation: true,
+});
+
+const stars = new THREE.Points(starGeometry, starMaterial);
+scene.add(stars);
 
 const composer = new EffectComposer(render);
 composer.addPass(new RenderPass(scene, camera));
 
 const bloomPass = new UnrealBloomPass(
-  new THREE.Vector2(window.innerWidth, window.innerHeight),
+  new THREE.Vector2(width, height),
   1.5,
   0.4,
   0.85
 );
 composer.addPass(bloomPass);
-
-Array(3000).fill().forEach(addStar);
 
 //animation
 
