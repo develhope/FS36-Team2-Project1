@@ -1,36 +1,36 @@
-body {
+.flag-slider-wrapper {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.flag-slider {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.swiper {
-  width: 200px;
-  height: 100%;
-}
-
-.swiper-slide {
-  /* height: 100px; */
-  transition: filter 0.3s ease, opacity 0.3s ease;
+  flex-direction: column;
+  transition: transform 0.5s ease;
 }
 .img-background {
-  width: 100px;
-  height: 100px;
-  background-color: #e5e7eb;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(229, 231, 235, 0.6); /* 60% opacità */
   border: 1px solid transparent;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-}
-
-.swiper-slide-active {
-  filter: brightness(1.2);
-  opacity: 1;
-}
-
-.swiper-slide:not(.swiper-slide-active) {
+  transition: transform 0.3s ease, filter 0.3s ease;
   filter: brightness(0.5);
-  opacity: 0.6;
+  /* transform: scale(1); */
+}
+
+.flag {
+  width: 37px;
+  height: 27px;
+}
+.img-background.active {
+  filter: brightness(1);
+  /* transform: scale(1.3); */
 }

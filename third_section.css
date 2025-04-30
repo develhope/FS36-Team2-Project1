@@ -15,10 +15,12 @@
 .terza-section-prima-scritta-card {
   font-size: 20px;
   color: var(--standard-white);
+  margin-top: 50px;
 }
 .terza-section-seconda-scritta-card {
   font-size: 18px;
   color: #9dabad;
+  margin-bottom: 30px;
 }
 .terza-section-scritte-card {
   margin-left: 35px;
@@ -70,6 +72,10 @@ a:hover {
   border-radius: 1rem;
   margin-left: 80px;
 }
+/*  .terza-section-card-container {
+  display: flex;
+  flex-wrap: wrap; 
+} */
 .video-totale {
   border-radius: 1rem;
   width: 330px;
@@ -78,7 +84,7 @@ a:hover {
 }
 
 .scritta-immagine {
-  margin-bottom: 35px;
+  /* margin-bottom: 30px; */
   margin-left: 30px;
 }
 .terza-section-forth-card {
