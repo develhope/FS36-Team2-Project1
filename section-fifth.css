@@ -1,7 +1,6 @@
 .section-fifth{
     background: #041E18;
 }
-/* top */
 .section-fifth-top h2{
     font-size: 4.32rem;
 }
@@ -10,7 +9,6 @@
     display: flex;
     padding: 8rem 0 5rem 0;
 }
-/* top txt */
 .section-fifth-top-txt{
     row-gap: 2.5rem;
 }
@@ -87,8 +85,14 @@
 .section-fifth-sliders, .section-fifth-carousel-container{
     display: flex;
 }
+.section-fifth-sliders{
+    height: 25rem;
+}
+.section-fifth-carousel-card{
+    height: 16.25rem;
+}
 .section-fifth-slider-container{
-    max-width: 500px;
+    max-width: 31.25rem;
     width: 50%;
     background: linear-gradient(311deg,rgba(7, 39, 32, 1) 0%, rgba(11, 51, 43, 1) 67%);
 }
@@ -100,7 +104,6 @@
 }
 .section-fifth-planet{
     width: 100%;
-    z-index: 0;
 }
 
 .section-fifth-middle-text{
@@ -117,4 +120,4 @@
 
 .section-fifth-middle-text p{
     font-size: 1.25rem;
-}
+}     
