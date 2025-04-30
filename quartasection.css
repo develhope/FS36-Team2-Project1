@@ -5,6 +5,14 @@
     color:var(--standard-gray-light);
 
 }
+
+#quarta-section p {
+  font-size: var(--standard-size-md);
+}
+
+#quarta-section a:link{
+  color: var(--standard-gray-light);
+}
 #quarta-section-primaparte{
     display: flex;
     flex-direction: column;
@@ -196,6 +204,12 @@
     left: 11%;
     align-items: left;
     width: 100%;
+  }
+
+  #quarta-section-text h1
+  {
+    font-size: 2.5rem;
+    font-weight: 400;
   }
 
 

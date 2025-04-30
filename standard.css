@@ -39,7 +39,7 @@ html{
 body{
     background-color: var(--standard-blue-dark);
     height: 100%;
-    font-family:'NeueHaasGrotesk', Helvetica, Arial, sans-serif;
+    font-family:'o', Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
