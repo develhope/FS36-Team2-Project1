@@ -1,0 +1,129 @@
+/* html { */
+/* font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400; */
+/* } */
+.terza-section-small-writing {
+  color: #30deee;
+  font-size: 20px;
+  margin-left: 80px;
+}
+.terza-section-bigger-writing {
+  color: var(--standard-white);
+  font-size: 55px;
+  margin-left: 80px;
+}
+.terza-section-prima-scritta-card {
+  font-size: 20px;
+  color: var(--standard-white);
+  margin-top: 50px;
+}
+.terza-section-seconda-scritta-card {
+  font-size: 18px;
+  color: #9dabad;
+  margin-bottom: 30px;
+}
+.terza-section-scritte-card {
+  margin-left: 35px;
+  margin-right: 50px;
+  margin-top: -25px;
+}
+a {
+  font-size: 18px;
+  color: #9dabad;
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--standard-white);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.terza-section-card-container {
+  display: flex;
+  margin-bottom: 130px;
+}
+.terza-section-first-card {
+  margin-left: 80px;
+  margin-right: 15px;
+  width: 662px;
+  height: 668px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border-radius: 1rem;
+}
+.terza-section-second-card {
+  width: 662px;
+  height: 668px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border: 1px;
+  border-radius: 1rem;
+}
+.scritta-card {
+  margin-left: 85px;
+}
+
+.terza-section-third-card {
+  background-image: url("file:///C:/Users/Utente/OneDrive/Documenti/GitHub/FS36-Team2-Project1/foto_video/cresci_in_tutto_il_mondo/600a7b9e8074695ddb32d366f72d93d4-height=547-width=868.png");
+  width: 1341px;
+  height: 596px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border: 1px;
+  border-radius: 1rem;
+  margin-left: 80px;
+}
+
+.video-totale {
+  border-radius: 1rem;
+  width: 330px;
+  margin-top: -260px;
+  margin-left: 850px;
+}
+
+.scritta-immagine {
+  margin-left: 30px;
+}
+.terza-section-forth-card {
+  margin-left: 80px;
+  margin-right: 15px;
+  width: 662px;
+  height: 668px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border: 1px;
+  border-radius: 1rem;
+}
+.computer {
+  border-radius: 1rem 0rem 0rem 0rem;
+  margin-left: 10%;
+  margin-top: 55px;
+}
+.scritta-computer {
+  margin-left: 30px;
+  margin-top: -15px;
+}
+.terza-section-fifth-card {
+  width: 662px;
+  height: 668px;
+  background-color: var(--card-color-2);
+  padding: 5px;
+  border: 1px;
+  border-radius: 1rem;
+}
+.display-flex {
+  display: flex;
+  justify-content: center;
+}
+.Iphone {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  width: 70%;
+  height: fit-content;
+  margin-top: 70px;
+}
+
+.scritta-iphone {
+  margin-left: 30px;
+  margin-top: -15px;
+}
