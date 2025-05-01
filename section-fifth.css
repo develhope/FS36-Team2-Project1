@@ -1,0 +1,123 @@
+.section-fifth{
+    background: #041E18;
+}
+.section-fifth-top h2{
+    font-size: 4.32rem;
+}
+ 
+.section-fifth-top > div:nth-child(2) {
+    display: flex;
+    padding: 8rem 0 5rem 0;
+}
+.section-fifth-top-txt{
+    row-gap: 2.5rem;
+}
+
+.section-fifth-top-txt h3{
+    font-size: 3rem;
+}
+
+.section-fifth-top-txt div{
+    margin: .5rem 0 0 0;
+    display: flex;
+}
+
+.section-fifth-green-txt{
+    display: flex;
+}
+.section-fifth-green-txt img{
+    width: 1rem;
+    height: 1.063rem;
+}
+.section-fifth-green-txt p{
+    margin: 0 0 0 0.75rem;
+    color: rgb(54, 244, 164);
+}
+
+.standard-weight.standard-title p:first-of-type {
+    font-size: 6rem;
+    margin: 0;
+  }
+  
+  .standard-weight.standard-title p:last-of-type {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+.section-fifth-top-txt .section-fifth-second-green {
+    margin: .5rem 0 0 auto;
+  }
+  
+
+.section-fifth-top-imgs {
+    position: relative;
+    background-image: url(./foto_video/la_piattaforma_migliore_per_creare_la_tua_attività/bg_container.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+}
+
+.section-fifth-top-imgs img {
+    position: absolute;
+    top: 0;
+    left: 8.438rem;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--standard-radius-sm);
+}
+
+.section-fifth-bottom{
+    margin: 0 5.625rem;
+}
+
+.section-fifth-bottom-text{
+    margin: 0 0 4rem 0;
+}
+
+.section-fifth-bottom-title{
+    margin: 0 0 1.5rem 0;
+    font-size: 3rem;
+}
+.section-fifth-sliders, .section-fifth-carousel-container{
+    display: flex;
+}
+.section-fifth-sliders{
+    height: 25rem;
+}
+.section-fifth-carousel-card{
+    height: 16.25rem;
+}
+.section-fifth-slider-container{
+    max-width: 31.25rem;
+    width: 50%;
+    background: linear-gradient(311deg,rgba(7, 39, 32, 1) 0%, rgba(11, 51, 43, 1) 67%);
+}
+
+.section-fifth-middle{
+    position: relative;
+    width: 100vw;
+    display: flex;
+}
+.section-fifth-planet{
+    width: 100%;
+}
+
+.section-fifth-middle-text{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-top: -11vw;
+}
+
+.section-fifth-middle-text h3{
+    margin: 0 0 1.5rem 0;
+    font-size: 3rem;
+}
+
+.section-fifth-middle-text p{
+    font-size: 1.25rem;
+}     
