@@ -1,0 +1,247 @@
+
+#quarta-section{
+    background-color: #000A1E;
+    width: 100%;
+    color:var(--standard-gray-light);
+
+}
+
+#quarta-section p {
+  font-size: var(--standard-size-md);
+}
+
+#quarta-section a:link{
+  color: var(--standard-gray-light);
+}
+#quarta-section-primaparte{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("foto_video/76d20295a407bff11ac0292184015d2d height=624-width=1950.png");
+    height: 35vw;
+}
+
+
+.quarta-section-testo{
+    width: 100%;
+    height: 10vw;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(
+    to right,
+    rgba(0, 10, 30, 1) 0%,
+    rgba(0, 10, 30, 1) 50%,
+    rgba(0, 10, 30, 0.8) 75%,
+    rgba(0, 10, 30, 0.4) 100%
+  );
+    padding: 20px;
+    padding-left: 11%;
+}
+
+.quarta-section-testo p h1{
+    width: 35%;
+    padding-left: 15%;
+    
+  
+}
+
+#quarta-section-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    mix-blend-mode: normal;
+  }
+  
+  #quarta-section-spotlight {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    mix-blend-mode: overlay;
+  }
+
+
+  #quarta-section-secondaparte {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  #quarta-section-dev {
+    position: relative;
+    width: 85%;
+    max-width: 75rem;
+    background: radial-gradient(circle at center, #09226a 0%, #131c2c 100%);
+    border-radius: 0.5rem;
+    padding: 1.875rem 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    margin-bottom: 40px;
+  }
+  
+  .quarta-section-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 68.75rem;
+    height: 25rem;
+  }
+  
+  /* BADGE */
+  .quarta-section-badge {
+    position: absolute;
+    background-color: rgba(40, 40, 60, 0.95);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .badge-left {
+    left: 8.5%;
+    top: 25%;
+    transform: translateY(-130%);
+    z-index: 10;
+  }
+  
+  .badge-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .badge-right {
+    right: 11.5%;
+    top: 50%;
+    transform: translateY(-130%);
+    z-index: 10;
+  }
+  
+  /* CARD GENERALI */
+  .quarta-section-card {
+    padding: 10px ;
+    padding-bottom: 0px;
+    position: absolute;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    background:  rgba(116, 110, 110, 0.5);
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.6);
+  }
+  
+  /* CARD SPECIFICHE */
+  .quarta-section-card-small {
+    width: 20%;
+    height: 60%;
+    top: 30%;
+    left: 9%;
+    z-index: 2;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  
+  .quarta-section-card-medium {
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: 3;
+  }
+  
+  .quarta-section-card-large {
+    width: 30%;
+    top: 55%;
+    height: auto;
+    right: 12%;
+    z-index: 5;
+  }
+  
+  .quarta-section-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  #quarta-section-dev::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 1.25rem 1.25rem;
+    z-index: 1;
+  }
+
+
+  #quarta-section-text
+  {
+    position: relative;
+    left: 11%;
+    align-items: left;
+    width: 100%;
+  }
+
+  #quarta-section-text h1
+  {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+
+  #quarta-section-hydrocontainer{
+    position: relative;
+    left: 25%;
+    top:60%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  #quarta-section-shopifydev{
+    position: relative;
+    top:37%;
+    left: 55%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(93, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  #quarta-section-shopifydev svg{
+    width: 26px;
+    height: 26px;
+  }
