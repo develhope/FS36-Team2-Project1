@@ -1,0 +1,71 @@
+:root {
+  --navbar-pad: 5.625rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100 vh;
+  background: transparent;
+}
+
+/* nav {
+    background-color: #000000;
+  } */
+/* quando in scroll nera */
+
+.navbar {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.position-properties {
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+
+.nounderline {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: oblique;
+}
+.nounderline a:hover {
+  text-decoration: none;
+}
+/* nav li :last-child,
+  nav li :nth-child(7) {
+    margin-left: auto;
+  } */
+
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  margin-right: 100px;
+}

@@ -1,47 +1,94 @@
-html {
-  font-size: 16 px;
-}
-:root {
-  /*sizes*/
-  --standard-size-sm: 1.125rem;
-  --standard-size-md: 1.25rem;
-  --standard-size-lg: 3.4375rem;
+html{
+    font-size: 16 px;  
+} 
+:root{
+    /*sizes*/
+--standard-size-sm: 1.125rem;
+--standard-size-md: 1.25rem;
+--standard-size-lg: 3.4375rem;
 
-  /*colori*/
-  --standard-trasparent: #00000000;
-  --standard-black: #000000;
-  --standard-white: #ffffff;
-  --standard-blue-dark: #02090a;
-  --standard-gray-light: #9797a2;
-  --standard-water-green-dark: #041e18;
+--standard-radius-sm: 0.75rem;
 
-  /*card*/
-  --card-color-1: linear-gradient(to top, #061518 20%, #0a2c30);
-  --card-color-2: #061a1c;
+    /*colori*/
+--standard-trasparent: #00000000;
+--standard-black:#000000;
+--standard-white: #ffffff;
+--standard-blue-dark: #02090a;
+--standard-gray-light: #9797a2;
+--standard-gray:#9DABAD;
+--standard-water-green-dark: #041e18;
+--radial-gradient:radial-gradient(
+    rgba(21, 112, 118, 0.6),  
+    rgb(6 26 28) 75%,         
+    #061a1c                   
+  );;
 
-  /*buttons*/
-  --button-bg-act: #a1a1aa;
-  --button-second-hv: #d4d4d8;
-  --button-third-hv: #ffffff26;
+    /*card*/
+--card-color-1: linear-gradient(to top, #061518 20%, #0a2c30);
+--card-color-2: #061A1C;
 
-  --button-pad: 0.75rem 1.5rem;
-  --button-rad: 624.9375rem;
+    /*buttons*/
+--button-bg-act:#A1A1AA;
+--button-second-hv:#D4D4D8;
+--button-third-hv:#FFFFFF26;
 
-  --button-tran: all 0.15s ease;
-}
-
-body {
-  background-color: var(--standard-blue-dark);
-  height: 100%;
-  font-family: "MyCustomFont", Helvetica, Arial, sans-serif;
-  margin: 0;
+--button-pad: var(--standard-radius-sm) 1.5rem;
+--button-rad: 624.9375rem;
+    
+--button-tran: all 0.15s ease;    
 }
 
 @font-face {
-  font-family: "MyCustomFont";
-  src: url("./Fonts/NHaasGroteskTXPro-55Rg.otf");
-  src: url("./Fonts/NHaasGroteskTXPro-55Rg.ttf");
+    font-family: 'NeueHaasGrotesk';
+    src: url('./Fonts/NHaasGroteskTXPro-55Rg.otf');
+    src: url('./Fonts/NHaasGroteskTXPro-55Rg.ttf');
 }
+
+body{
+    background-color: var(--standard-blue-dark);
+    height: 100%;
+    font-family:'NeueHaasGrotesk', Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+/*font*/
+@font-face {
+    font-display: swap;
+    font-family: NeueHaasGrotesk;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn.shopify.com/b/shopify-brochure2-assets/8e7a81acb91d51d6051bfb7f97e8ecaa.woff2) format("woff2"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/1cbd239d733557437a427162aff52be8.woff) format("woff"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/90d64aa1ddad076d7d69e1dc1414321a.ttf) format("ttf")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NeueHaasGrotesk;
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://cdn.shopify.com/b/shopify-brochure2-assets/5ed4b67d15b44e848aaae29d2e30ec03.woff2) format("woff2"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/ab4d5f1126ba42a1ffaed42b4b444684.woff) format("woff"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/a2768e9bf57f40ef4203c4c686fb5c6e.ttf) format("ttf")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NeueHaasGrotesk;
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://cdn.shopify.com/b/shopify-brochure2-assets/85640034fdc1068cdb17d5e74ab9876d.woff2) format("woff2"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/234d2b025158bb5d34932312dbe25a75.woff) format("woff"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/487c38363a740f737e9e2ac142166b79.ttf) format("ttf")
+}
+.standard-weight{
+    font-weight: 400;
+}
+.standard-title{
+    margin: 0;
+    color: var(--standard-white);
+}
+.standard-text{
+    margin: 0;
+    color: var(--standard-gray);
+}
+.standard-link:hover{
+    color: var(--standard-white);
+}
+/*...*/
 
 /*queries*/
 @media (min-width: 0rem) and (max-width: 39.9375rem) {
@@ -74,18 +121,42 @@ body {
   }
 }
 /*...*/
-
-/*Cards*/
-.card {
-  display: flex;
-  background: var(--card-color-1);
-  border-radius: 0.75rem;
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.center-content{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.card2 {
-  background-color: var(--card-color-2);
-  display: flex;
-  border-radius: 0.75rem;
+body{
+    background-color: var(--standard-blue-dark);
+    height: 100%;
+    font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.center-content{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+    /*Cards*/
+.card{
+    display: flex;
+    background: var(--card-color-1);
+    border-radius: var(--standard-radius-sm);
+}
+
+.card2{
+    background-color: var(--card-color-2);
+    display: flex;
+    border-radius: var(--standard-radius-sm);
 }
 /*End Cards*/
 

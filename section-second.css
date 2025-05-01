@@ -1,0 +1,101 @@
+:root{
+    --section-second-gray:#9DABAD;
+    --section-second-cyan:#30DEEE;
+    --second-section-margin: 1rem;
+}
+.section-second-rules{
+    display: flex;
+    width: 100vw;
+}
+
+.section-second-container{
+    width: 40%;
+}
+
+.section-second-text-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#section-second-blue-text{
+    color: var(--section-second-cyan);
+    margin: 0 0 1rem 0
+}
+.section-second-text{
+    padding-bottom: 4rem;
+}
+/*...*/
+.section-second-vd-lg{
+    margin-bottom: var(--second-section-margin);
+}
+
+.section-second-card-container{
+    display: flex;
+    flex-direction: row;
+}
+.section-second-card{
+    justify-content: center;
+    align-items: center;
+}
+
+.section-second-visual-elements{
+    height: 100%;
+    width: 100%;
+    margin: auto 0 auto 0;
+}
+
+.section-second-register, .section-second-vd-sm{
+    margin-right: var(--second-section-margin);
+}
+
+#section-second-vd-lg{
+    object-fit: contain;
+    width: 100%;
+}
+
+#section-second-register{
+    height: 60%;
+}
+/*...*/
+.section-second-card-text{
+    margin: 0;
+    padding: 2rem;
+}
+
+.section-second-title{
+    color: var(--standard-white);
+    font-size: var(--standard-size-md);
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+}
+#section-second-first-title{
+    font-size: 3.4375rem;
+}
+#section-second-first-p{
+    margin: auto 0 0 0;
+    padding: 0 0 0 10rem;
+}
+
+.section-second-link, .section-second-p{
+    color: var(--section-second-gray);
+    font-size: var(--standard-size-sm);
+    font-weight: 400;
+}
+
+.section-second-card-p{
+    margin: 0;
+}
+
+.section-second-link:hover{
+    text-decoration: none;
+    color: var(--standard-white);
+}
+
+.section-second-card-color{
+background: #1F2D32;
+background: radial-gradient(at center, #1F2D32, #071B1C);
+}
+
+.boh-dimensioni{
+    width: 60%;
+}
