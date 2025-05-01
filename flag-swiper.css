@@ -1,0 +1,36 @@
+.flag-slider-wrapper {
+  height: 400px;
+  width: 100px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.flag-slider {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+}
+.img-background {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(229, 231, 235, 0.6); /* 60% opacità */
+  border: 1px solid transparent;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.5);
+  /* transform: scale(1); */
+}
+
+.flag {
+  width: 37px;
+  height: 27px;
+}
+.img-background.active {
+  filter: brightness(1);
+  /* transform: scale(1.3); */
+}
