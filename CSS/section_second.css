@@ -1,11 +1,12 @@
 :root{
     --section-second-gray:#9DABAD;
     --section-second-cyan:#30DEEE;
-    --second-section-margin: 1rem;
+    --section-second-margin: 1rem;
 }
 .section-second-rules{
     display: flex;
     width: 100vw;
+    background: var(--standard-blue-dark);
 }
 
 .section-second-container{
@@ -24,9 +25,9 @@
 .section-second-text{
     padding-bottom: 4rem;
 }
-/*...*/
+
 .section-second-vd-lg{
-    margin-bottom: var(--second-section-margin);
+    margin-bottom: var(--section-second-margin);
 }
 
 .section-second-card-container{
@@ -45,7 +46,7 @@
 }
 
 .section-second-register, .section-second-vd-sm{
-    margin-right: var(--second-section-margin);
+    margin-right: var(--section-second-margin);
 }
 
 #section-second-vd-lg{
@@ -56,7 +57,7 @@
 #section-second-register{
     height: 60%;
 }
-/*...*/
+
 .section-second-card-text{
     margin: 0;
     padding: 2rem;
@@ -94,8 +95,4 @@
 .section-second-card-color{
 background: #1F2D32;
 background: radial-gradient(at center, #1F2D32, #071B1C);
-}
-
-.boh-dimensioni{
-    width: 60%;
 }
