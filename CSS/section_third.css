@@ -1,15 +1,17 @@
-.flag-slider-wrapper{
+.flag-slider-wrapper {
   margin: 100px 0 0 0;
+}
+.terza-section-card-container {
 }
 .terza-section-small-writing {
   color: #30deee;
   font-size: 20px;
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 .terza-section-bigger-writing {
   color: var(--standard-white);
   font-size: 55px;
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 .terza-section-prima-scritta-card {
   font-size: 20px;
@@ -37,12 +39,23 @@ a:hover {
   text-decoration: none;
 }
 
-.terza-section-card-container {
+.terza-section-first-second-card-container {
+  display: flex;
+  margin-bottom: 130px;
+  width: 1339px;
+}
+.terza-section-third-card-container {
   display: flex;
   margin-bottom: 130px;
 }
+.terza-section-fourth-fifth-card-container {
+  display: flex;
+  margin-bottom: 130px;
+  width: 1339px;
+  margin-left: 20px;
+}
 .terza-section-first-card {
-  margin-left: 80px;
+  /* margin-left: 80px; */
   margin-right: 15px;
   width: 662px;
   height: 668px;
@@ -59,7 +72,7 @@ a:hover {
   border-radius: 1rem;
 }
 .scritta-card {
-  margin-left: 85px;
+  margin-left: 45px;
 }
 
 .terza-section-third-card {
@@ -72,7 +85,8 @@ a:hover {
   padding: 5px;
   border: 1px;
   border-radius: 1rem;
-  margin-left: 80px;
+  margin-left: 38px;
+  margin-right: 45px;
 }
 
 .video-totale {
@@ -85,8 +99,11 @@ a:hover {
 .scritta-immagine {
   margin-left: 30px;
 }
+.last-section {
+  margin-left: 60px;
+}
 .terza-section-forth-card {
-  margin-left: 80px;
+  margin-left: 38px;
   margin-right: 15px;
   width: 662px;
   height: 668px;
