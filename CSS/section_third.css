@@ -1,7 +1,6 @@
-/* html { */
-/* font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400; */
-/* } */
+.flag-slider-wrapper{
+  margin: 100px 0 0 0;
+}
 .terza-section-small-writing {
   color: #30deee;
   font-size: 20px;
@@ -64,10 +63,12 @@ a:hover {
 }
 
 .terza-section-third-card {
-  background-image: url("file:///C:/Users/Utente/OneDrive/Documenti/GitHub/FS36-Team2-Project1/foto_video/cresci_in_tutto_il_mondo/600a7b9e8074695ddb32d366f72d93d4-height=547-width=868.png");
   width: 1341px;
   height: 596px;
   background-color: var(--card-color-2);
+  background-image: url("../foto_video/cresci_in_tutto_il_mondo/section-third-map.png");
+  background-repeat: no-repeat;
+  background-position: right center;
   padding: 5px;
   border: 1px;
   border-radius: 1rem;

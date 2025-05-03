@@ -91,74 +91,20 @@ body{
 .standard-link:hover{
     color: var(--standard-white);
 }
-/*...*/
-
-@font-face {
-    font-display: swap;
-    font-family: NeueHaasGrotesk;
-    font-style: normal;
-    font-weight: 500;
-    src: url(https://cdn.shopify.com/b/shopify-brochure2-assets/5ed4b67d15b44e848aaae29d2e30ec03.woff2) format("woff2"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/ab4d5f1126ba42a1ffaed42b4b444684.woff) format("woff"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/a2768e9bf57f40ef4203c4c686fb5c6e.ttf) format("ttf")
+.section-background{
+  background-color: var(--standard-blue-dark);
+  margin: 0;
+  padding: 0;
 }
 
-@font-face {
-    font-display: swap;
-    font-family: NeueHaasGrotesk;
-    font-style: normal;
-    font-weight: 600;
-    src: url(https://cdn.shopify.com/b/shopify-brochure2-assets/85640034fdc1068cdb17d5e74ab9876d.woff2) format("woff2"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/234d2b025158bb5d34932312dbe25a75.woff) format("woff"),url(https://cdn.shopify.com/b/shopify-brochure2-assets/487c38363a740f737e9e2ac142166b79.ttf) format("ttf")
+.container-pad {
+  padding: 2.5rem 0;
+}
+.container-margin {
+  margin: 0 1rem;
 }
 
 
-
-
-
-/*queries*/
-@media (min-width: 0rem) and (max-width: 39.9375rem) {
-  /*0 to 639px*/
-  .container-pad {
-    padding: 2.5rem 0;
-  }
-  .container-margin {
-    margin: 0 1rem;
-  }
-}
-
-@media (min-width: 40rem) and (max-width: 56.1875rem) {
-  /*640 to 899px*/
-  .container-pad {
-    padding: 2.5rem 0;
-  }
-  .container-margin {
-    margin: 0 1.875rem;
-  }
-}
-
-@media (min-width: 56.25rem) {
-  /*900px*/
-  .container-pad {
-    padding: 4rem 0;
-  }
-  .container-margin {
-    margin: 0 3.125rem;
-  }
-}
-/*...*/
-.flex-column{
-    display: flex;
-    flex-direction: column;
-}
-.center-content{
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-body{
-    background-color: var(--standard-blue-dark);
-    height: 100%;
-    font-family:'MyCustomFont', Helvetica, Arial, sans-serif;
-}
 .flex-column{
     display: flex;
     flex-direction: column;
