@@ -8,25 +8,30 @@
 }
 body {
   min-height: 100 vh;
-  background: transparent;
 }
 
-nav {
-    background-color: #000000;
-  }
+.navbar {
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  z-index: 10;
+}
+/* background: transparent; */
+.navbar.scrolled {
+  background-color: black;
+}
 /* quando in scroll nera */
 
 .navbar {
   width: 100vw;
-  height: 100%;
+  height: 70px;
   display: flex;
   justify-content: flex-start;
 }
 
 .position-properties {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 9;
+  /* z-index: 9; */
 }
 
 nav ul {
