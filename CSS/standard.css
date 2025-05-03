@@ -40,8 +40,8 @@ html{
 
 @font-face {
     font-family: 'NeueHaasGrotesk';
-    src: url('./Fonts/NHaasGroteskTXPro-55Rg.otf');
-    src: url('./Fonts/NHaasGroteskTXPro-55Rg.ttf');
+    src: url('../Fonts/NHaasGroteskTXPro-55Rg.otf');
+    src: url('../Fonts/NHaasGroteskTXPro-55Rg.ttf');
 }
 
 

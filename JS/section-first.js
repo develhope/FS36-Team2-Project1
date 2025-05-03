@@ -25,7 +25,7 @@ if (carousel) {
   const firstCardWidth = firstCard
     ? firstCard.offsetWidth + parseFloat(getComputedStyle(carousel).gap || "0")
     : 0;
-  const carouselLi = [...carousel.children];
+  const carouselLi = [..carousel.children];
 
   let isDragging = false,
     isAutoPlaying = true,
@@ -120,7 +120,6 @@ if (carousel) {
   carousel.addEventListener("mouseenter", () => clearTimeout(timeoutId));
   carousel.addEventListener("mouseleave", () => {
     if (!isDragging) {
-      // autoPlay(); // Uncomment if you want mouseleave to restart autoplay
     }
   });
 } else {

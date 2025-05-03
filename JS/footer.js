@@ -4,22 +4,22 @@ const rightImg = document.querySelector(".img-right");
 
 const footerImages = {
   1: [
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p1_first.jpg",
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p1_second.jpg",
+    "../foto/foto_video/inizia_a_vendere_in_un_battibaleno/p1_first.jpg",
+    "../foto/foto_video/inizia_a_vendere_in_un_battibaleno/p1_second.jpg",
   ],
   2: [
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p2_first.jpg",
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p2_second.jpg",
+    "../foto/foto_video/inizia_a_vendere_in_un_battibaleno/p2_first.jpg",
+    "../foto/foto_video/inizia_a_vendere_in_un_battibaleno/p2_second.jpg",
   ],
   3: [
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p3_first.jpg",
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p3_second.jpg",
+    "../foto/foto_video/inizia_a_vendere_in_un_battibaleno/p3_first.jpg",
+    "../foto/foto_video/inizia_a_vendere_in_un_battibaleno/p3_second.jpg",
   ],
 };
 
 const originalImages = [
-  "./foto_video/inizia_a_vendere_in_un_battibaleno/original_left.jpg",
-  "./foto_video/inizia_a_vendere_in_un_battibaleno/original_right.jpg",
+  "../foto_video/inizia_a_vendere_in_un_battibaleno/original_left.jpg",
+  "../foto_video/inizia_a_vendere_in_un_battibaleno/original_right.jpg",
 ];
 
 // steps.forEach((step) => {

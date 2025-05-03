@@ -2,7 +2,7 @@ const carousel = document.querySelector(".section-fifth-carousel");
 const firstCardWidth = carousel.querySelector(
   ".section-fifth-card"
 ).offsetWidth;
-const carouselLi = [...carousel.children];
+const carouselLi = [..carousel.children];
 
 let isDragging = false,
   startX,
@@ -24,7 +24,7 @@ carouselLi
 carouselLi.slice(0, cardPerView).forEach((card) => {
   carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 
-  //...
+  //..
 });
 const dragStart = (e) => {
   isDragging = true;
