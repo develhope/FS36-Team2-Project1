@@ -17,7 +17,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    background-image: url("foto_video/76d20295a407bff11ac0292184015d2d height=624-width=1950.png");
+    background-image: url("../foto_video/76d20295a407bff11ac0292184015d2d height=624-width=1950.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
     height: 35vw;
 }
 
@@ -96,7 +98,6 @@
     height: 25rem;
   }
   
-  /* BADGE */
   .quarta-section-badge {
     position: absolute;
     background-color: rgba(40, 40, 60, 0.95);
@@ -140,7 +141,6 @@
     z-index: 10;
   }
   
-  /* CARD GENERALI */
   .quarta-section-card {
     padding: 10px ;
     padding-bottom: 0px;
@@ -151,7 +151,6 @@
     box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.6);
   }
   
-  /* CARD SPECIFICHE */
   .quarta-section-card-small {
     width: 20%;
     height: 60%;
