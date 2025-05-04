@@ -4,50 +4,63 @@ const rightImg = document.querySelector(".img-right");
 
 const footerImages = {
   1: [
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p1_first.jpg",
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p1_second.jpg",
+    "./foto_video/inizia_a_vendere_in_un_battibaleno/p1_first.jpg",
+    "./foto_video/inizia_a_vendere_in_un_battibaleno/p1_second.jpg",
   ],
   2: [
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p2_first.jpg",
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p2_second.jpg",
+    "./foto_video/inizia_a_vendere_in_un_battibaleno/p2_first.jpg",
+    "./foto_video/inizia_a_vendere_in_un_battibaleno/p2_second.jpg",
   ],
   3: [
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p3_first.jpg",
-    "./foto/foto_video/inizia_a_vendere_in_un_battibaleno/p3_second.jpg",
+    "./foto_video/inizia_a_vendere_in_un_battibaleno/p3_first.jpg",
+    "./foto_video/inizia_a_vendere_in_un_battibaleno/p3_second.jpg",
   ],
 };
 
 const originalImages = [
-  "./foto_video/inizia_a_vendere_in_un_battibaleno/original_left.jpg",
-  "./foto_video/inizia_a_vendere_in_un_battibaleno/original_right.jpg",
+  "./foto_video/inizia_a_vendere_in_un_battibaleno/original_first.jpg",
+  "./foto_video/inizia_a_vendere_in_un_battibaleno/original_second.jpg",
 ];
 
-// steps.forEach((step) => {
-//   step.addEventListener("mouseenter", () => {
-//     const stepNum = step.dataset.step;
-//     leftImg.src = images[stepNum][0];
-//     rightImg.src = images[stepNum][1];
-//   });
-// });
+if (!leftImg || !rightImg) {
+  console.error("Errore: Impossibile trovare .img-left o .img-right nel DOM.");
+} else {
+  leftImg.src = originalImages[0];
+  rightImg.src = originalImages[1];
+}
 
-function mouseOver(step) {
+if (steps.length === 0) {
+  console.warn(
+    "Attenzione: Nessun elemento trovato per '.sales-steps li'. Controlla il selettore CSS e l'HTML."
+  );
+}
+
+function setupStepHover(step) {
+  const stepKey = step.dataset.step;
+  if (!stepKey) {
+    console.warn("Elemento <li> trovato senza attributo 'data-step':", step);
+    return;
+  }
+
   step.addEventListener("mouseenter", () => {
-    const stepKey = step.dataset.step;
-    const stepImages = images[stepKey];
+    const stepImages = footerImages[stepKey];
 
-    if (stepImages) {
-      leftImg.src = stepImages[0];
-      rightImg.src = stepImages[1];
+    if (stepImages && stepImages.length === 2) {
+      if (leftImg) leftImg.src = stepImages[0];
+      if (rightImg) rightImg.src = stepImages[1];
     } else {
-      console.warn("Nessuna immagine trovata per step:", stepKey);
+      console.warn(
+        `Immagini non trovate o array incompleto per lo step: ${stepKey}. Controlla l'oggetto 'footerImages' e l'attributo 'data-step' nell'HTML.`
+      );
     }
   });
 
   step.addEventListener("mouseleave", () => {
-    leftImg.src = originalImages[0];
-    rightImg.src = originalImages[1];
+    if (leftImg) leftImg.src = originalImages[0];
+    if (rightImg) rightImg.src = originalImages[1];
   });
 }
+
 steps.forEach((step) => {
-  mouseOver(step);
+  setupStepHover(step);
 });
