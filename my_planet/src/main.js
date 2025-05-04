@@ -1,4 +1,4 @@
-import "../style.css";
+import "./style.css";
 
 import * as THREE from "three";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer";
@@ -42,7 +42,7 @@ window.addEventListener("resize", resizeRenderToContainer);
 //planet
 
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load("../night_earth.jpeg");
+const earthTexture = textureLoader.load("./night_earth.jpeg");
 
 const geometry = new THREE.SphereGeometry(10, 27, 20);
 const material = new THREE.MeshStandardMaterial({ map: earthTexture });

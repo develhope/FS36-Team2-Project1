@@ -25,7 +25,7 @@ if (carousel) {
   const firstCardWidth = firstCard
     ? firstCard.offsetWidth + parseFloat(getComputedStyle(carousel).gap || "0")
     : 0;
-  const carouselLi = [..carousel.children];
+  const carouselLi = [carousel.children];
 
   let isDragging = false,
     isAutoPlaying = true,
